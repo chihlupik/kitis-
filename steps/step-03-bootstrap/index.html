@@ -8,8 +8,44 @@
 <link rel="stylesheet" href="vendor/bootstrap.min.css"> -->
 <!-- TODO 2: скопируй свой style.css из шага 2 и подключи ПОСЛЕ bootstrap:
 <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- .container центрирует контент и задает отступы по бокам -->
+<div class="container mt-5">
+  
+  <!-- Сетка: .row создает строку, .col-md-6 делит экран пополам (6 из 12 колонок) -->
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card p-3 shadow-sm">
+        <h2 class="h4 text-primary">Заголовок карточки</h2>
+        <p class="text-muted">Обычный текст с готовыми отступами и шрифтом.</p>
+        <!-- Кнопка с синим фоном -->
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Открыть окно
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Пример интерактивного модального окна (работает за счет подключенного JS) -->
+<div class="modal fade" id="exampleModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Проверка JS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Если это окно открылось, CSS и JS подключены правильно!
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- TODO 3: шапка
 <nav class="navbar navbar-dark bg-dark">
